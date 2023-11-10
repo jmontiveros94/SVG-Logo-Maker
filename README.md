@@ -1,10 +1,14 @@
 # SVG Logo Generator
 
-## Description
+# Description
 
 This is a Node.js command-line application that takes in user input to generate a logo and save it as an SVG file. The application prompts the user to select a color and shape, provide text for the logo, and save the generated SVG to a .svg file.
 
-## Table of Contents
+# Screenshots 
+
+
+
+# Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -13,11 +17,7 @@ This is a Node.js command-line application that takes in user input to generate 
 - [Tests](#tests)
 - [Questions](#questions)
 
-## Installation
-
-Provide step-by-step instructions on how to install your project. Include any dependencies and their versions.
-
-## Usage 
+## Usage / Installation
 
 1. clone repository from GitHub
 2. Install jest and inquirer from the terminal ('npm i' for both jest and inquirer)
