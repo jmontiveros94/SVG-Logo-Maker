@@ -9,7 +9,7 @@ const triangle = new Triangle(5, 8);
 const circle = new Circle(3);
 const square = new Square(4);
 
-// Use the methods
+// Uses the methods to fit the area on the file's page
 console.log('Triangle Area:', triangle.calculateArea());
 console.log('Circle Area:', circle.calculateArea());
 console.log('Square Area:', square.calculateArea());
