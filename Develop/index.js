@@ -1,6 +1,18 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const { buildSvg } = require('svg-builder');
+// Imports the classes from the lib
+const { Triangle, Circle, Square } = require('./shapes');
+
+// Create instances of the classes
+const triangle = new Triangle(5, 8);
+const circle = new Circle(3);
+const square = new Square(4);
+
+// Use the methods
+console.log('Triangle Area:', triangle.calculateArea());
+console.log('Circle Area:', circle.calculateArea());
+console.log('Square Area:', square.calculateArea());
 
 async function generateLogo() {
   try {
