@@ -13,9 +13,6 @@
     "inquirer": "^8.2.4",
     "svg-builder": "^2.0.0"
   },
-  "scripts": {
-    "test": "jest"
-  },
   "devDependencies": {
     "jest": "^29.7.0"
   }
