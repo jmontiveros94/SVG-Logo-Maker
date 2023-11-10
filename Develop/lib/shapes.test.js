@@ -1,26 +1,22 @@
 const { Triangle, Circle, Square } = require('./shapes');
 
-// Test cases for Triangle class
-describe('Triangle', () => {
-  it('calculates area correctly', () => {
-    const triangle = new Triangle(5, 8);
-    expect(triangle.calculateArea()).toBe(20);
-  });
+describe('Shape', () => {
+    describe ('Circle', () => {
+        test ('should return the SVG file for circles', () => {
+            const circle = new Circle('green');
+            expect(circle.render()).toEqual(`<circle cx="150" cy="100" r="80" fill="red" />`);
+        });
+    });
+    describe ('Square', () => {
+        test ('should return the SVG code for a square', () => {
+            const square = new Square('green');
+            expect(square.render()).toEqual(`<rect x="70" y="20" width="160" height="160" fill="blue" />`);
+        });
+    });
+    describe ('Triangle', () => {
+        test ('should return the SVG code for a triangle', () => {
+            const triangle = new Triangle('green');
+            expect(triangle.render()).toEqual(`<polygon points="150,10 240,190 60,190" fill="green" />`);
+        });
+    });
 });
-
-// Test cases for Circle class
-describe('Circle', () => {
-  it('calculates area correctly', () => {
-    const circle = new Circle(3);
-    expect(circle.calculateArea()).toBeCloseTo(28.27, 2);
-  });
-});
-
-// Test cases for Square class
-describe('Square', () => {
-  it('calculates area correctly', () => {
-    const square = new Square(4);
-    expect(square.calculateArea()).toBe(16);
-  });
-});
-

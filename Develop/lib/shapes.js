@@ -1,36 +1,39 @@
-// shapes.js
-
+class Shape {
+    constructor(color) {
+        this.color = color;
+    }
+};
 // Class for Triangle
-class Triangle {
-    constructor(base, height) {
-      this.base = base;
-      this.height = height;
+// super extends the color class of shape
+class Circle extends Shape {
+    constructor(color) {
+        super(color);
     }
-  
-    calculateArea() {
-      return 0.5 * this.base * this.height;
+    // renders the shape
+    render() {
+        return `<circle cx="150" cy="100" r="80" fill="${this.color}" />`;
     }
-  }
-  
+};
   // Class for Circle
-  class Circle {
-    constructor(radius) {
-      this.radius = radius;
+  class Triangle extends Shape {
+    constructor(color) {
+        super(color);
     }
-  
-    calculateArea() {
-      return Math.PI * Math.pow(this.radius, 2);
+    // renders the shape
+    render() {
+        return `<polygon points="150,10 240,190 60,190" fill="${this.color}" />`;
     }
   }
+ 
   
   // Class for Square
-  class Square {
-    constructor(side) {
-      this.side = side;
+  class Square extends Square {
+    constructor(color) {
+        super(color);
     }
-  
-    calculateArea() {
-      return Math.pow(this.side, 2);
+    // renders the shape 
+    render() {
+        return `<rect x="70" y="20" width="160" height="160" fill="${this.color}" />`;
     }
   }
   
