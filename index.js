@@ -1,9 +1,9 @@
-const fs = require('fs');
 const inquirer = require('inquirer');
+const fs = require('fs');
 // Imports the shapesclasses from the lib
-const { Triangle, Circle, Square } = require('./lib/shapes');
+const { Triangle, Circle, Square } = require('./Develop/lib/shapes');
 
-const userquestions = [
+const questions = [
   {
     type: 'list',
     name: 'shape',
@@ -34,9 +34,8 @@ function writeToFile(folderName, fileName, data) {
   });
 }
 function init() {
-  // call to inquirer to ask the questions and store the answers
+// prompts the user with questions via inquirer
   inquirer.prompt(questions).then((answers) => {
-    // store the answers in variables
     const logoText = answers['logo-text'];
     const logoTextColor = answers['logo-text-color'];
     const logoShape = answers['logo-shape'];
@@ -44,7 +43,6 @@ function init() {
 
     let shape;
 
-    // Create an instance of the selected shape class
     switch (logoShape) {
       case 'circle':
         shape = new Circle(logoColor);
@@ -56,7 +54,7 @@ function init() {
         shape = new Triangle(logoColor);
         break;
       default:
-        console.log('Please choose another shape.');
+        console.log('');
         return;
     }
 
@@ -65,5 +63,4 @@ function init() {
   });
 }
 init()
-// Run the application
 module.exports = writeToFile;
