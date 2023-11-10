@@ -2,5 +2,11 @@
   "dependencies": {
     "inquirer": "^9.2.12",
     "svg-builder": "^2.0.0"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
   }
 }
