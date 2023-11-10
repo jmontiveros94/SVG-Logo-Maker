@@ -1,3 +1,4 @@
+// this class will be the class that Circle, Triangle, and Square inherit
 class Shape {
     constructor(color) {
         this.color = color;
@@ -27,7 +28,7 @@ class Circle extends Shape {
  
   
   // Class for Square
-  class Square extends Square {
+  class Square extends Shape {
     constructor(color) {
         super(color);
     }
@@ -37,7 +38,7 @@ class Circle extends Shape {
     }
   }
   
-  // Export the classes
+  // Exports the classes
   module.exports = {
     Triangle,
     Circle,
