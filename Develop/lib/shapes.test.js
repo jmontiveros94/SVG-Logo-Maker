@@ -1,4 +1,4 @@
-const { Triangle, Circle, Square } = require('./shapes');
+const { Circle, Square, Triangle } = require('./shapes');
 
 describe('Shape', () => {
     describe ('Circle', () => {
