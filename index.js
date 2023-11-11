@@ -8,7 +8,7 @@ const questions = [
     type: 'list',
     name: 'shape',
     message: 'Select a shape for the logo:',
-    choices: ['circle', 'rectangle', 'triangle'],
+    choices: ['circle', 'square', 'triangle'],
   },
   {
     type: 'input',
