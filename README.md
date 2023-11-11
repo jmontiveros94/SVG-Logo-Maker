@@ -6,6 +6,10 @@ This is a Node.js command-line application that takes in user input to generate 
 
 # Screenshots 
 
+<img width="1443" alt="Screenshot 2023-11-10 at 3 46 45 PM" src="https://github.com/jmontiveros94/SVG-Logo-Maker/assets/134089282/f2b3fd65-689a-4411-abbf-455613469cbb">
+
+# Video Walkthrough
+
 
 
 # Table of Contents
